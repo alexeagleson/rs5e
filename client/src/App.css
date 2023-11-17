@@ -1,0 +1,42 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: 0.5rem;
+}
+
+.make-unit {
+  display: flex;
+  column-gap: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-group-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  column-gap: 0.5rem;
+}
+
+/* label {
+  margin: 0 12px 0 0;
+} */
+
+.button-selected {
+  background-color: #ff3333 !important;
+  color: white !important;
+}
+
+button {
+  background-color: #eeeeee !important;
+  border-color: #343434 !important;
+  color: #343434 !important;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

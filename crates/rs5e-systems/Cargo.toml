@@ -1,0 +1,15 @@
+[package]
+name = "rs5e-systems"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+test = ["rs5e-components/test"]
+
+[dependencies]
+rs5e-components = { path = "../rs5e-components" }
+rs5e-concepts = { path = "../rs5e-concepts" }
+rs5e-dice = { path = "../rs5e-dice" }
+
+[dev-dependencies]
+rs5e-components = { path = "../rs5e-components", features = ["test"] }

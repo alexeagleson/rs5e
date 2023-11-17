@@ -1,0 +1,13 @@
+[package]
+name = "rs5e-concepts"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+test = []
+serde = ["dep:serde", "rs5e-dice/serde"]
+
+[dependencies]
+rs5e-dice = { path = "../rs5e-dice" }
+serde = { version = "1.0.188", features = ["derive"], optional = true }
+typeshare = "1.0.1"

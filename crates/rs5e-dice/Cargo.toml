@@ -1,0 +1,15 @@
+[package]
+name = "rs5e-dice"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex E"]
+description = "DnD 5e Tools"
+
+[features]
+loaded-dice = []
+serde = ["dep:serde"]
+
+[dependencies]
+rand = "0.8.5"
+serde = { version = "1.0.188", features = ["derive"], optional = true }
+typeshare = "1.0.1"

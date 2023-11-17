@@ -1,0 +1,37 @@
+[package]
+name = "rs5e-app"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.20"
+# reqwest = { version = "0.11", features = ["json"] }
+rs5e-components = { path = "crates/rs5e-components" }
+rs5e-concepts = { path = "crates/rs5e-concepts", features = ["serde"] }
+rs5e-schema = { path = "crates/rs5e-schema" }
+rs5e-dice = { path = "crates/rs5e-dice" }
+rs5e-entities = { path = "crates/rs5e-entities" }
+rs5e-log = { path = "crates/rs5e-log" }
+rs5e-macro-derive = { path = "crates/rs5e-macro-derive" }
+rs5e-systems = { path = "crates/rs5e-systems", features = ["test"] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+# tower = "0.4.13"
+tokio = { version = "1.32.0" }
+tower-http = { version = "0.4.4", features = ["fs"] }
+typeshare = "1.0.1"
+
+[workspace]
+members = [
+    "crates/rs5e-components",
+    "crates/rs5e-concepts",
+    "crates/rs5e-schema",
+    "crates/rs5e-dice",
+    "crates/rs5e-entities",
+    "crates/rs5e-log",
+    "crates/rs5e-macro-derive",
+    "crates/rs5e-systems",
+]

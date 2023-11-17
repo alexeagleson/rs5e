@@ -1,0 +1,12 @@
+[package]
+name = "rs5e-entities"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rs5e-components = { path = "../rs5e-components" }
+rs5e-concepts = { path = "../rs5e-concepts" }
+rs5e-dice = { path = "../rs5e-dice" }
+rs5e-macro-derive = { path = "../rs5e-macro-derive" }
