@@ -1,6 +1,6 @@
 # rs5e
 
-This project is an attempt to simulate physical combat using the DnD 53 rules from the SRD
+This project is an attempt to simulate physical combat using the DnD 5e rules from the SRD
 
 It includes a client web interface to build two characters and smash them into each other.
 
